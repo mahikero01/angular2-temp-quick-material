@@ -12,7 +12,8 @@ var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var forms_1 = require('@angular/forms');
 var material_1 = require('@angular/material');
-//import { PersonFormComponent } from './person-form.component';
+var person_form_component_1 = require('./person-form.component');
+var persons_routing_1 = require('./persons.routing');
 var PersonModule = (function () {
     function PersonModule() {
     }
@@ -21,9 +22,12 @@ var PersonModule = (function () {
             imports: [
                 common_1.CommonModule,
                 forms_1.FormsModule,
-                material_1.MaterialModule
+                material_1.MaterialModule,
+                persons_routing_1.PersonsRouting
             ],
-            declarations: []
+            declarations: [
+                person_form_component_1.PersonFormComponent
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], PersonModule);

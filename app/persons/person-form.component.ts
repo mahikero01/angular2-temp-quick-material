@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    selector: 'person-form',
-    template: `<h1>Ol</h1>`
+    templateUrl: 'person-form.component.html'
 })
 
 export class PersonFormComponent{}

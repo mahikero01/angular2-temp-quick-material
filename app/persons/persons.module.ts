@@ -3,16 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '@angular/material';
 
-//import { PersonFormComponent } from './person-form.component';
+import { PersonFormComponent } from './person-form.component';
+
+import { PersonsRouting } from './persons.routing';
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
-        MaterialModule
+        MaterialModule,
+        PersonsRouting
     ],
     declarations: [
-        //PersonFormComponent
+        PersonFormComponent
     ]
 })
 

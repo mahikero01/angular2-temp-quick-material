@@ -9,17 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var PersonFormComponent = (function () {
-    function PersonFormComponent() {
+var router_1 = require('@angular/router');
+var person_form_component_1 = require('./person-form.component');
+var personRoutes = [
+    { path: 'persons', component: person_form_component_1.PersonFormComponent }
+];
+var PersonsRouting = (function () {
+    function PersonsRouting() {
     }
-    PersonFormComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'person-form',
-            template: "<h1>Ol</h1>"
+    PersonsRouting = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forChild(personRoutes)],
+            exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], PersonFormComponent);
-    return PersonFormComponent;
+    ], PersonsRouting);
+    return PersonsRouting;
 }());
-exports.PersonFormComponent = PersonFormComponent;
+exports.PersonsRouting = PersonsRouting;

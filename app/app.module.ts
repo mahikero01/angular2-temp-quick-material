@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 
 import { PersonModule } from './persons/persons.module';
 
+import { AppRouting } from './app.routing';
+
 
 
 @NgModule({
-    imports: [BrowserModule, PersonModule],
+    imports: [BrowserModule, PersonModule, AppRouting],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
